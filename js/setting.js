@@ -73,30 +73,30 @@ OpenSpending.Styles.Cofog = {
   '9-45': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
   '9-46': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
   '10': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
-  '10-47': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '10-48': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '10-49': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '10-50': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '10-51': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '11': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '11-52': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '11-53': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '12': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '12-54': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-55': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-56': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-57': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-58': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-59': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-60': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-61': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '13-62': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '14': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '14-63': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '15': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '15-64': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
-  '16': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
+  '10-47': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '10-48': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '10-49': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '10-50': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '10-51': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '11': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '11-52': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '11-53': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '12': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '12-54': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-55': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-56': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-57': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-58': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-59': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-60': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-61': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '13-62': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '14': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '14-63': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '15': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '15-64': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
+  '16': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
   '16-65': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
 };
 
