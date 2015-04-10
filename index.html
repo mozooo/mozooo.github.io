@@ -15,8 +15,8 @@ yepnope({
     '/js/libs/raphael-min.js',
     '/js/aggregator.js',
     '/css/dailybread.css',
-    '/js/setting.js?20120707',
-    '/js/dailybread.js?20120707'
+    '/js/setting.js?20150410',
+    '/js/dailybread.js?d20150410'
   ],
   complete: function() {
 
@@ -65,6 +65,23 @@ yepnope({
   <!--
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
   -->
+  <div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
+    <select id="kwsk_fiscal-year">
+      <option value="2015" selected="selected">平成 27 年度</option>
+      <option value="2014" selected="">平成 26 年度</option>
+    </select>
+  </div>
+  <div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
+    <select id="kwsk_category-type">
+      <option value="use" selected="selected"></option>
+      <option value="legal" selected="">款・別（財政法上の分類）</option>
+    </select>
+  </div>
+  <div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">あなたの世帯タイプは？</h2>
+  </div>
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">あなたの世帯タイプは？</h2>
     <div id="select-dependents-type" style="width:450px;display:inline-block;">
