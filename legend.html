@@ -8,9 +8,9 @@ title: The Daily Bread
 <table>
   {% for config in categorytype.config %}
   <tr>
-  <td bgcolor="{{ config.data.bcolor }}"><img src="{{ config.data.icon }}" /></td>
+  <td>
+    <object type="image/svg+xml" data="{{{{ config.data.icon }}}}" height="70" width="70"></object>
   </tr>
   {% endfor %}
 </table>
 {% endfor %}
-
