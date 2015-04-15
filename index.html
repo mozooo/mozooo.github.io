@@ -75,8 +75,9 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
     <select id="kwsk_category-type">
-      <option value="use" selected>使いみち</option>
-      <option value="legal">款・別（財政法上の分類）</option>
+    {% for categorytype in site.data.categorytypes %}
+      <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
+    {% endfor %}
     </select>
   </div>
   <div>
