@@ -6,13 +6,13 @@ layout: default
 <h2 class="page-header">データの出所</h2>
 
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8 offset3">
 
 
   <p>このサイトは神奈川県川崎市の以下年度の予算案データを対象としています。</p>
   <ul>
     {% for fiscalyear in site.data.fiscalyears %}
-      <li><a href="{{ fiscalyear.url }}">{{ fiscalyear.jc }}の予算案について</a></li>
+      <li><a href="{{ fiscalyear.url }}" target="_blank">{{ fiscalyear.jc }}の予算案について</a></li>
     {% endfor %}
   </ul>
 
@@ -22,7 +22,7 @@ layout: default
 <h2 class="page-header">どのように、可視化に使っているデータの分類を決めているのか？ </h2>
 
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8 offset3">
   データの分類としては以下の2つを使用しています。
   <ul>
     <li>対象となる年度の『平成x年度予算案について』の「資料」における「9 市民1人当たりの予算の使いみち」の区分</li>
@@ -32,7 +32,7 @@ layout: default
 <h2 class="page-header">いつの時点のデータを使っているのか？ </h2>
 
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8 offset3">
   各年度の当初予算案作成時のデータを使っています。
   </div>
 </div>
@@ -40,7 +40,7 @@ layout: default
 <h2 class="page-header">このサイト上で税金額はどのように計算されているのですか？</h2>
 
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8 offset3">
 自分の年間総収入を入力し、単身世帯かそれ以外かを選択すると、給与所得者であるという前提で、年間に支払う市税年総額と一日当たりに支払っている市税額が表示されます。一日当たりの市税額は16分野に分類されています。また、16の各分野毎に支払われている市税額は、それぞれ、主要な事業予算を担当している市税額に細分類されています。<br/>所得控除額は、単身世帯の場合33万円、扶養一人世帯の場合66万円、市税負担額は課税対象額の6％と設定しています。また、16分野への税金の配分比率は、川崎市の一般会計全体における16分野への予算配分比率(平成27年4月1日現在)を使っています。
 </div>
 </div>
@@ -58,7 +58,7 @@ If you know of data published in this way for your country, please email us at <
 <h2 class="page-header">私のデータの視覚化をお願いできますか？ </h2>
 
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8 offset3">
   はい、できます。もし、キレイに視覚化したいデータをお持ちであれば、<a href="contact.html">コンタクトフォーム</a>からご連絡下さい。
   </div>
 </div>
