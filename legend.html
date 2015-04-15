@@ -6,9 +6,9 @@ title: The Daily Bread
 {% for categorytype in site.data.categorytypes %}
 <h2>{{ categorytype.text }}</h2>
 <table>
-  {% for config in categorytype.config.keys %}
+  {% for config in categorytype.config %}
   <tr>
-  <td>{{ config }} : {{ config.value }}</td>
+  <td>{{ config.id }} : {{ config.data }}</td>
   </tr>
   {% endfor %}
 </table>
