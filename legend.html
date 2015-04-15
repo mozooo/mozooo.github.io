@@ -8,7 +8,7 @@ title: The Daily Bread
 <table>
   {% for config in categorytype.config %}
   <tr>
-  <td>{{ config.icon }}</td>
+  <td>{{ config.key }} : {{ config.value }}</td>
   </tr>
   {% endfor %}
 </table>
