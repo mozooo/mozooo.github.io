@@ -2,101 +2,101 @@
   text: '使いみち'
   selected: selected
   config:
-    - { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    - { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    - { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
-    - { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '保険・医療・福祉の充実に' }
+    - { id: '2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '子育ての支援に' }
+    - { id: '3', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '道路・公園緑地・河川・下水道の整備と安全なまちづくりに' }
+    - { id: '4', image: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }, data: '学校教育と生涯教育に' }
+    - { id: '5', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }, data: '計画的なまちづくりに' }
+    - { id: '6', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '行政運営に' }
+    - { id: '7', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '地域経済の発展に' }
+    - { id: '8', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '環境・リサイクルに' }
+    - { id: '9', image: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }, data: '区政の振興に' }
+    - { id: '10', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: '港湾の整理に' }
+    - { id: '11', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }, data: '共生と参加のまちづくりに' }
+    - { id: '12', image: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }, data: '交通・水道の経営安定に' }
+    - { id: '13', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: 'その他' }
 - id: kanagawaken_kawasakishi_budget
   text: '款・項（財政法上の分類）'
   selected:
   config:
-    - { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    - { id: '1-1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    - { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-3', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-4', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-5', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-6', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-7', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-8', data: { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-9', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '2-10', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    - { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    - { id: '3-11', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    - { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '4-12', data: { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    - { id: '4-13', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    - { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
-    - { id: '5-14', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
-    - { id: '5-15', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
-    - { id: '5-16', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-17', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-18', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-19', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-20', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-21', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-22', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-23', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-24', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-25', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '5-26', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '6-27', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '6-28', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '6-29', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '6-30', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '6-31', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    - { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '7-32', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '7-33', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '7-34', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '7-35', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '7-36', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    - { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-37', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-38', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-39', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-40', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-41', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-42', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-43', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '8-44', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    - { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '9-45', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '9-46', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    - { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '10-47', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '10-48', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '10-49', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '10-50', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '10-51', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '11-52', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '11-53', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '12-54', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-55', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-56', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-57', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-58', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-59', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-60', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-61', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '13-62', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '14', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '14-63', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '15', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '15-64', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '16', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
-    - { id: '16-65', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
+    - { id: '1-1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
+    - { id: '2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費' }
+    - { id: '2-2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 職員管理費' }
+    - { id: '2-3', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 総務管理費' }
+    - { id: '2-4', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 危機管理費' }
+    - { id: '2-5', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 総合企画費' }
+    - { id: '2-6', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 徴税費' }
+    - { id: '2-7', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 選挙費' }
+    - { id: '2-8', image: { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 統計調査費' }
+    - { id: '2-9', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 人事委員会費' }
+    - { id: '2-10', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 監査費' }
+    - { id: '3', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '市民費' }
+    - { id: '3-11', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '市民費 - 市民生活費' }
+    - { id: '4', image: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }, data: 'こども費' }
+    - { id: '4-12', image: { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#4E6D00' }, data: 'こども費 - こども青少年費' }
+    - { id: '4-13', image: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#4E6D00' }, data: 'こども費 - こども支援費' }
+    - { id: '5', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }, data: '健康福祉費' }
+    - { id: '5-14', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }, data: '健康福祉費 - 健康福祉費' }
+    - { id: '5-15', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }, data: '健康福祉費 - 社会福祉費' }
+    - { id: '5-16', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 生活保護費' }
+    - { id: '5-17', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 老人福祉費' }
+    - { id: '5-18', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 障害者福祉費' }
+    - { id: '5-19', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 国民年金費' }
+    - { id: '5-20', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 公衆衛生費' }
+    - { id: '5-21', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 公害保健費' }
+    - { id: '5-22', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 保健衛生施設費' }
+    - { id: '5-23', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 保健所費' }
+    - { id: '5-24', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - リハビリテーション医療センター費' }
+    - { id: '5-25', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 看護短期大学費' }
+    - { id: '5-26', image: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }, data: '健康福祉費 - 施設整備費' }
+    - { id: '6', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費' }
+    - { id: '6-27', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費 - 環境管理費' }
+    - { id: '6-28', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費 - 公害対策費' }
+    - { id: '6-29', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費 - ごみ処理費' }
+    - { id: '6-30', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費 - し尿処理費' }
+    - { id: '6-31', image: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }, data: '環境費 - 施設費' }
+    - { id: '7', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費' }
+    - { id: '7-32', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費 - 産業経済費' }
+    - { id: '7-33', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費 - 商工業費' }
+    - { id: '7-34', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費 - 中小企業支援費' }
+    - { id: '7-35', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費 - 農業費' }
+    - { id: '7-36', image: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }, data: '経済労働費 - 労政費' }
+    - { id: '8', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費' }
+    - { id: '8-37', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 建設緑政管理費' }
+    - { id: '8-38', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 道路橋りょう費' }
+    - { id: '8-39', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 街路事業費' }
+    - { id: '8-40', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 広域道路費' }
+    - { id: '8-41', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 河川費' }
+    - { id: '8-42', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 緑化費' }
+    - { id: '8-43', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 自然保護対策費' }
+    - { id: '8-44', image: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }, data: '建設緑政費 - 公園費' }
+    - { id: '9', image: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }, data: '港湾費' }
+    - { id: '9-45', image: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }, data: '港湾費 - 港湾管理費' }
+    - { id: '9-46', image: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }, data: '港湾費 - 港湾建設費' }
+    - { id: '10', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費' }
+    - { id: '10-47', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費 - まちづくり管理費' }
+    - { id: '10-48', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費 - 計画費' }
+    - { id: '10-49', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費 - 整備事業費' }
+    - { id: '10-50', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費 - 建設管理費' }
+    - { id: '10-51', image: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }, data: 'まちづくり費 - 住宅費' }
+    - { id: '11', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }, data: '区役所費' }
+    - { id: '11-52', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }, data: '区役所費 - 区政振興費' }
+    - { id: '11-53', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }, data: '区役所費 - 戸籍住民基本台帳費' }
+    - { id: '12', image: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }, data: '消防費' }
+    - { id: '12-54', image: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }, data: '消防費 - 消防費' }
+    - { id: '13', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費' }
+    - { id: '13-55', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 教育総務費' }
+    - { id: '13-56', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 小学校費' }
+    - { id: '13-57', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 中学校費' }
+    - { id: '13-58', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 高等学校費' }
+    - { id: '13-59', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 特別支援教育費' }
+    - { id: '13-60', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 社会教育費' }
+    - { id: '13-61', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 体育保健費' }
+    - { id: '13-62', image: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }, data: '教育費 - 教育施設整備費' }
+    - { id: '14', image: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }, data: '公債費' }
+    - { id: '14-63', image: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }, data: '公債費 - 公債費' }
+    - { id: '15', image: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }, data: '諸支出金' }
+    - { id: '15-64', image: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }, data: '諸支出金 - 繰出金' }
+    - { id: '16', image: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }, data: '予備費' }
+    - { id: '16-65', image: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }, data: '予備費 - 予備費' }
