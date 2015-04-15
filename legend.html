@@ -1,0 +1,15 @@
+---
+layout: popup
+title: The Daily Bread
+---
+
+{% for categorytype in site.data.categorytypes %}
+<h2>{{ categorytype.text }}</h2>
+<table>
+  {% for config in site.data.categorytype.config %}
+  <tr>
+  <td>{{ config.icon }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %}

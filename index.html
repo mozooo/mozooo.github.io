@@ -68,8 +68,9 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
     <select id="kwsk_fiscal-year">
-      <option value="2015" selected>平成 27 年度</option>
-      <option value="2014">平成 26 年度</option>
+    {% for fiscalyear in site.data.fiscalyears %}
+      <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
+    {% endfor %}
     </select>
   </div>
   <div>
