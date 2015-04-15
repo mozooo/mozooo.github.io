@@ -2,101 +2,101 @@
   text: '使いみち'
   selected: selected
   config:
-    { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
-    { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
+    - { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
+    - { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
+    - { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
 - id: kanagawaken_kawasakishi_budget
   text: '款・項（財政法上の分類）'
   selected:
   config:
-    { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    { id: '1-1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
-    { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-3', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-4', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-5', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-6', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-7', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-8', data: { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-9', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '2-10', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
-    { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    { id: '3-11', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '4-12', data: { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    { id: '4-13', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#4E6D00' }}
-    { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
-    { id: '5-14', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
-    { id: '5-15', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
-    { id: '5-16', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-17', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-18', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-19', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-20', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-21', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-22', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-23', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-24', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-25', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '5-26', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '6-27', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '6-28', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '6-29', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '6-30', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '6-31', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
-    { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '7-32', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '7-33', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '7-34', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '7-35', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '7-36', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
-    { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-37', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-38', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-39', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-40', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-41', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-42', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-43', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '8-44', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
-    { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '9-45', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '9-46', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
-    { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '10-47', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '10-48', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '10-49', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '10-50', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '10-51', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '11-52', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '11-53', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '12-54', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-55', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-56', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-57', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-58', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-59', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-60', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-61', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '13-62', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '14', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '14-63', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '15', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '15-64', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '16', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
-    { id: '16-65', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
+    - { id: '1-1', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }}
+    - { id: '2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-2', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-3', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-4', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-5', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-6', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-7', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-8', data: { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-9', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '2-10', data: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }}
+    - { id: '3', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
+    - { id: '3-11', data: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }}
+    - { id: '4', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '4-12', data: { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#4E6D00' }}
+    - { id: '4-13', data: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#4E6D00' }}
+    - { id: '5', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03' }}
+    - { id: '5-14', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
+    - { id: '5-15', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#2A3A03'  }}
+    - { id: '5-16', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-17', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-18', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-19', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-20', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-21', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-22', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-23', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-24', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-25', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '5-26', data: { icon: 'icons/social-systems.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '6', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '6-27', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '6-28', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '6-29', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '6-30', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '6-31', data: { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#EC2406' }}
+    - { id: '7', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '7-32', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '7-33', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '7-34', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '7-35', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '7-36', data: { icon: 'icons/economic-aid.svg', color: '#C75746', bcolor: '#938626' }}
+    - { id: '8', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-37', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-38', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-39', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-40', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-41', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-42', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-43', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '8-44', data: { icon: 'icons/transport.svg', color: '#C75746', bcolor: '#C75746' }}
+    - { id: '9', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '9-45', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '9-46', data: { icon: 'icons/anchor.svg', color: '#C75746', bcolor: '#D33673' }}
+    - { id: '10', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '10-47', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '10-48', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '10-49', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '10-50', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '10-51', data: { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '11', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '11-52', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '11-53', data: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '12', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '12-54', data: { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-55', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-56', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-57', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-58', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-59', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-60', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-61', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '13-62', data: { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '14', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '14-63', data: { icon: 'icons/money.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '15', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '15-64', data: { icon: 'icons/EC.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '16', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
+    - { id: '16-65', data: { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }}
