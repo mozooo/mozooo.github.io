@@ -9,7 +9,13 @@ layout: default
   <div class="span8 offset4">
 
 
-  <p>このサイトは神奈川県川崎市の<a href="http://www.city.kawasaki.jp/230/page/0000065034.html" target="_blank">平成27年度予算議案及び予算説明資料の川崎市一般会計予算（議案第46後号）</a>のうち、款と項のみを対象としています。</p>
+  <p>このサイトは神奈川県川崎市の以下年度の予算案データを対象としています。</p>
+  <ul>
+    {% for fiscalyear in site.data.fiscalyears %}
+      <li><a href="{{ fiscalyear.url }}">{{ fiscalyear.jc }}の予算案について</a></li>
+    {% endfor %}
+  </ul>
+
   </div>
 </div>
 
@@ -17,14 +23,17 @@ layout: default
 
 <div class="row">
   <div class="span8 offset4">
-  川崎市一般会計予算（議案第46後号）において用いられている16の款および65の項を分類として使用しています。
+  データの分類としては以下の2つを使用しています。
+  <ul>
+    <li>対象となる年度の『平成x年度予算案について』の「資料」における「9 市民1人当たりの予算の使いみち」の区分</li>
+    <li>対象となる年度の『平成x年度予算案について』の「参考」における「8 予算編成の過程」において用いられている款・項の項目</li>
   </div>
 </div>
 <h2 class="page-header">いつの時点のデータを使っているのか？ </h2>
 
 <div class="row">
   <div class="span8 offset4">
-  平成27年度川崎市予算（一般会計）のデータを使っています。
+  各年度の当初予算案作成時のデータを使っています。
   </div>
 </div>
 
@@ -45,15 +54,6 @@ The COFOG categories are international, so yes - it should be possible to compar
 If you know of data published in this way for your country, please email us at <a href="mailto:info@openspending.org">info@openspending.org</a>.
   </div>
 </div-->
-
-<h2 class="page-header">どのようなデータを使っているのですか？</h2>
-
-<div class="row">
-  <div class="span8 offset4">
-  今回の<strong>Where Does My Money Go?（川崎市版）</strong> は川崎市の平成27年度一般会計予算のうち、款と項のみを対象としていますが、今後より詳細な目まで対象を広げることも考えています。
-
-  </div>
-</div>
 
 <h2 class="page-header">私のデータの視覚化をお願いできますか？ </h2>
 
