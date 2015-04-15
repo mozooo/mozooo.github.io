@@ -10,7 +10,7 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'kanagawaken_kawasakishi_2015yosan';
+OpenSpending.identifier = 'kanagawaken_kawasakishi_budget';
 OpenSpending.year = '2015';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
