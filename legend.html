@@ -5,10 +5,11 @@ title: The Daily Bread
 
 {% for categorytype in site.data.categorytypes %}
 <h2>{{ categorytype.text }}</h2>
+{{ categorytype.config }}
 <table>
   {% for config in categorytype.config %}
   <tr>
-  <td>{{ config.id }} : {{ config.data }}</td>
+  <td>{{ config }} : {{ config.data }}</td>
   </tr>
   {% endfor %}
 </table>
