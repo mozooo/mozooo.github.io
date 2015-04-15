@@ -6,10 +6,10 @@ title: The Daily Bread
 {% for categorytype in site.data.categorytypes %}
 <h2>{{ categorytype.text }}</h2>
 <table>
-  {% for config in categorytype.config %}
   <tr>
-  <td>{{ config.id }} : {{ config.data }}</td>
+  <td><img src="{{ config.data.icon }}" /></td>
   </tr>
   {% endfor %}
 </table>
 {% endfor %}
+
