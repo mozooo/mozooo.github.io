@@ -6,7 +6,7 @@
 //
 // ========================================================
 
-var Setter = function() {
+var Setter = {
   apiUrl: '',
   rootNodeLabel: '',
   taxes: {
