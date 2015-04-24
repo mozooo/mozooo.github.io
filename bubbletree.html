@@ -18,11 +18,21 @@ title: 使途別予算額
     '/css/bubbletree.css',
     '/css/cra-map.css',
     '/js/aggregator.js',
-    '/js/setting.js'
+    '/js/setting.js?20150410'
   ],
   complete: function() {
 
     $(function() {
+
+      // イベント：会計年度
+      $("#fiscal-year").change(function(){
+        createAggregator(db, this.value);
+      });
+      // イベント：分類タイプ
+      $("#category-type").change(function(){
+        createAggregator(db, this.value);
+      });
+
       var $tooltip = $('<div class="tooltip">Tooltip</div>');
       $('.bubbletree').append($tooltip);
       $tooltip.hide();

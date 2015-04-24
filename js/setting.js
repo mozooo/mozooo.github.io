@@ -1,7 +1,3 @@
-/*
- * Icons for COFOG taxonomy
- *
- */
 var Taxes = Taxes || {};
 
 Taxes.baseKoujo = 330000; // 住民税基礎控除

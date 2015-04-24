@@ -1,7 +1,0 @@
-# Config
-# Icons for COFOG taxonomy
-
-Taxes:
-  baseKoujo: 330000 # 住民税基礎控除
-  huyoKoujo: 330000 # 一人分の扶養控除
-  taxRate: 0.06 # 住民税率
