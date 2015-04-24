@@ -19,6 +19,12 @@ var Setter = function() {
   init: function() {
     var categoryType = jsyaml.load("_data/categorytype.yml");
 console.log(categoryType);
+
+    this.apiUrl = 'http://openspending.org/api';
+    this.rootNodeLabel = 'Total';
+    this.taxes.baseKoujo = 330000;
+    this.taxes.huyoKoujo = 330000;
+    this.taxes.taxRate = 0.06;
 /*
     config: {
       apiUrl: 'http://openspending.org/api',
