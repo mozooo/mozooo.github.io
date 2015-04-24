@@ -11,6 +11,7 @@ Where Does My Money Go? は、納税者である国民一人ひとりが、支�
 
 Core Team: (@は Twitter Account)
 
+樋口 直人(Naoto Higuchi), (+NaotoHc)
 鈴木　覚(Satoru Suzuki), (@mozo_flyinglass)
 
 

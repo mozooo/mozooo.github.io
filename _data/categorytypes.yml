@@ -1,6 +1,9 @@
+# 分類の定義
 - id: kanagawaken_kawasakishi_budget_use
   text: '使いみち'
   selected: selected
+  drilldowns: ['Category']
+  breakdown: 'Category'
   config:
     - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '保険・医療・福祉の充実に' }
     - { id: '2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '子育ての支援に' }
@@ -18,6 +21,8 @@
 - id: kanagawaken_kawasakishi_budget
   text: '款・項（財政法上の分類）'
   selected:
+  drilldowns: ['Category', 'Subcategory']
+  breakdown: 'Subcategory'
   config:
     - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
     - { id: '1-1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
