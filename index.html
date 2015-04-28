@@ -15,8 +15,6 @@ yepnope({
     '/js/libs/raphael-min.js',
     '/js/aggregator.js',
     '/css/dailybread.css',
-    '/js/customlibs/esprima.js?20150410',
-    '/js/customlibs/js-yaml.js?20150410',
     // '/js/setting.js?20150410',
     '/js/setter.js?20150410',
     '/js/dailybread.js?d20150410'
@@ -57,7 +55,7 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
     <select id="fiscal-year">
-    {% for fiscalyear in site.data.fiscalyears %}
+    {% for fiscalyear in site.data.kwsk.fiscalyears %}
       <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
     {% endfor %}
     </select>
@@ -65,7 +63,7 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
     <select id="category-type">
-    {% for categorytype in site.data.categorytypes %}
+    {% for categorytype in site.data.kwsk.categorytypes %}
       <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
     {% endfor %}
     </select>
