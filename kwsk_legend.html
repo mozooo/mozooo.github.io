@@ -3,7 +3,7 @@ layout: kwsk_popup
 title: The Daily Bread
 ---
 
-{% for categorytype in site.data.categorytypes %}
+{% for categorytype in site.data.kwsk.categorytypes %}
 <h2>{{ categorytype.text }}</h2>
 <table>
   {% for config in categorytype.config %}
