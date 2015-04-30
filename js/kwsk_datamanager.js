@@ -19,6 +19,31 @@ var DataManager = {
   configs: {},
   styles: {},
 
+  init: function() {
+    var common = this._readYaml(this.ymlCommonPath);
+    var fiscalYears = this._readYaml(this.ymlFiscalYearsPath);
+    var categorytypes = this._readYaml(this.ymlCategorytypesPath);
+
+    this.taxes = common.taxes;
+
+    for (type of categorytypes) {
+      this.configs[type.id] = {
+        apiUrl: common.apiUrl,
+        dataset: type.id,
+        drilldowns: type.drilldowns,
+        breakdown: type.breakdown,
+        rootNodeLabel: common.rootNodeLabel,
+      }
+      this.styles[type.id] = type.config;
+    }
+  },
+
+  setConfig: function(categoryType, fiscalYear, cb) {
+    this.configs[categoryTyps][cuts] = ['year:' + fiscalYear];
+    this.configs[categoryTyps][callback] = cb;
+    new OpenSpending.Aggregator(this.configs[categoryTyps]);
+  },
+
   _readYaml: function(path) {
     var YAML = window.YAML;
     var httpObj;
@@ -40,31 +65,6 @@ var DataManager = {
       }
     }
     httpObj.send(null);
-  },
-
-  init: function() {
-    var common = _readYaml(this.ymlCommonPath);
-    var fiscalYears = _readYaml(this.ymlFiscalYearsPath);
-    var categorytypes = _readYaml(this.ymlCategorytypesPath);
-
-    this.taxes = common.taxes;
-
-    for (type of categorytypes) {
-      this.configs[type.id] = {
-        apiUrl: common.apiUrl,
-        dataset: type.id,
-        drilldowns: type.drilldowns,
-        breakdown: type.breakdown,
-        rootNodeLabel: common.rootNodeLabel,
-      }
-      this.styles[type.id] = type.config;
-    }
-  },
-
-  setConfig: function(categoryType, fiscalYear, cb) {
-    this.configs[categoryTyps][cuts] = ['year:' + fiscalYear];
-    this.configs[categoryTyps][callback] = cb;
-    new OpenSpending.Aggregator(this.configs[categoryTyps]);
   }
 };
 
