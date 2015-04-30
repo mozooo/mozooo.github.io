@@ -68,4 +68,4 @@ var DataManager = {
   }
 };
 
-Setter.init();
+DataManager.init();
