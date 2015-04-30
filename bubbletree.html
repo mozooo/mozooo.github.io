@@ -7,7 +7,7 @@ title: 使途別予算額
   <script type="text/javascript">
 
   function updatePage(db, categoryType, fiscalYear) {
-    Setter.setConfig(categoryType, fiscalYear, function (data) {
+    DataManager.setConfig(categoryType, fiscalYear, function (data) {
       db.children('#content-wrap').show();
       db.children('#preloader').remove();
 
