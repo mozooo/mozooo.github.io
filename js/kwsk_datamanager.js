@@ -7,9 +7,9 @@
 // ========================================================
 
 var DataManager = {
-  ymlCommonPath = '/_data/kwsk/common.yml',
-  ymlFiscalYearsPath = '/_data/kwsk/fiscalyears.yml',
-  ymlCategorytypesPath = '/_data/kwsk/categorytypes.yml',
+  ymlCommonPath: '/_data/kwsk/common.yml',
+  ymlFiscalYearsPath: '/_data/kwsk/fiscalyears.yml',
+  ymlCategorytypesPath: '/_data/kwsk/categorytypes.yml',
 
   taxes: {
     baseKoujo: 0, // 住民税基礎控除
@@ -18,29 +18,6 @@ var DataManager = {
   },
   configs: {},
   styles: {},
-
-  _readYaml: function(path) {
-    var YAML = window.YAML;
-    var httpObj;
-    if (window.XMLHttpRequest){
-      httpObj = new XMLHttpRequest();
-    }else{
-      if (window.ActiveXObject){
-        httpObj = new ActiveXObject("Microsoft.XMLHTTP");
-      }else{
-        httpObj = null;
-      }
-    }
-
-    httpObj.open("GET", path, true);
-    httpObj.onreadystatechange = function() {
-      if (httpObj.readyState == 4 && httpObj.status == 200){
-        var data = YAML.parse(httpObj.responseText);
-        return eval(JSON.stringify(data));
-      }
-    }
-    httpObj.send(null);
-  },
 
   init: function() {
     var common = _readYaml(this.ymlCommonPath);
@@ -65,6 +42,29 @@ var DataManager = {
     this.configs[categoryTyps][cuts] = ['year:' + fiscalYear];
     this.configs[categoryTyps][callback] = cb;
     new OpenSpending.Aggregator(this.configs[categoryTyps]);
+  },
+
+  _readYaml: function(path) {
+    var YAML = window.YAML;
+    var httpObj;
+    if (window.XMLHttpRequest){
+      httpObj = new XMLHttpRequest();
+    }else{
+      if (window.ActiveXObject){
+        httpObj = new ActiveXObject("Microsoft.XMLHTTP");
+      }else{
+        httpObj = null;
+      }
+    }
+
+    httpObj.open("GET", path, true);
+    httpObj.onreadystatechange = function() {
+      if (httpObj.readyState == 4 && httpObj.status == 200){
+        var data = YAML.parse(httpObj.responseText);
+        return eval(JSON.stringify(data));
+      }
+    }
+    httpObj.send(null);
   }
 };
 
