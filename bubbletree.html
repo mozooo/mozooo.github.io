@@ -5,6 +5,25 @@ title: 使途別予算額
 
 <div class="row">
   <script type="text/javascript">
+
+  function updatePage(db, categoryType, fiscalYear) {
+    Setter.setConfig(categoryType, fiscalYear, function (data) {
+      db.children('#content-wrap').show();
+      db.children('#preloader').remove();
+
+      db.setDataFromAggregator(data, ['unknown']);
+      db.setIconLookup(function(name) {
+        var style = this.configs[categoryType].Styles.Cofog[name];
+        if (style != undefined) {
+          return style['icon'];
+        }
+        return 'icons/unknown.svg';
+      });
+      db.draw();
+    });
+    OpenSpending.renderDependentTypes(db);
+  }
+
   yepnope.errorTimeout = 1000;
   yepnope({
   load: [
@@ -14,24 +33,25 @@ title: 使途別予算額
     '/js/libs/vis4.js',
     '/js/libs/base64.js',
     '/js/libs/Tween.js',
+    '/js/libs/kwsk/yaml.js',
     '/js/bubbletree.js',
     '/css/bubbletree.css',
     '/css/cra-map.css',
     '/js/aggregator.js',
-    '/js/setting.js?20150410'
+    '/js/datamanager.js?20150430'
   ],
   complete: function() {
 
     $(function() {
 
-      // イベント：会計年度
-      $("#fiscal-year").change(function(){
-        createAggregator(db, this.value);
-      });
-      // イベント：分類タイプ
-      $("#category-type").change(function(){
-        createAggregator(db, this.value);
-      });
+        // イベント：会計年度
+        $("#fiscal-year").change(function(){
+          updatePage(db, $("#category-type").value, this.value);
+        });
+        // イベント：分類タイプ
+        $("#category-type").change(function(){
+          updatePage(db, this.value, $("#fiscal-year").value);
+        });
 
       var $tooltip = $('<div class="tooltip">Tooltip</div>');
       $('.bubbletree').append($tooltip);
