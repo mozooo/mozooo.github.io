@@ -66,6 +66,6 @@ var DataManager = {
     this.configs[categoryTyps][callback] = cb;
     new OpenSpending.Aggregator(this.configs[categoryTyps]);
   }
-}
+};
 
 Setter.init();
