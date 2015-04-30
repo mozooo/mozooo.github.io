@@ -26,7 +26,7 @@ var DataManager = {
 
     this.taxes = common.taxes;
 
-    for type in categorytypes {
+    for (type of categorytypes) {
       this.configs[type.id] = {
         apiUrl: common.apiUrl,
         dataset: type.id,
