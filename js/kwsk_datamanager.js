@@ -20,9 +20,9 @@ var DataManager = {
   styles: {},
 
   init: function() {
-    var common = this._readYaml(this.ymlCommonPath);
-    var fiscalYears = this._readYaml(this.ymlFiscalYearsPath);
-    var categorytypes = this._readYaml(this.ymlCategorytypesPath);
+    var common = {% site.data.kwsk.common %};
+    var fiscalYears = {% site.data.kwsk.fiscalyears %};
+    var categorytypes = {% site.data.kwsk.categorytypes %};
 
     this.taxes = common.taxes;
 
