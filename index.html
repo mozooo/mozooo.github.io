@@ -34,7 +34,7 @@ yepnope({
     '/js/aggregator.js',
     '/css/dailybread.css',
     // '/js/setting.js?20150410',
-    '/js/kwsk_datamanager.js?20150430',
+    '/js/datamanager.js?20150430',
     '/js/dailybread.js?20150430'
   ],
   complete: function() {
@@ -71,7 +71,7 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
     <select id="fiscal-year">
-    {% for fiscalyear in site.data.kwsk.fiscalyears %}
+    {% for fiscalyear in site.data.fiscalyears %}
       <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
     {% endfor %}
     </select>
@@ -79,7 +79,7 @@ yepnope({
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
     <select id="category-type">
-    {% for categorytype in site.data.kwsk.categorytypes %}
+    {% for categorytype in site.data.categorytypes %}
       <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
     {% endfor %}
     </select>
@@ -115,4 +115,13 @@ yepnope({
   </div>
   あなたの市税は、1日当たり、どこで、いくら使われているか？
 </div><!-- /#dailybread -->
+<div id="data-categorytypes" style="display: none;">
+[
+{% for categorytype in site.data.categorytypes %}
+  {
+    "id": {{ categorytype.id }}
 
+  }
+{% endfor %}
+]
+</div>

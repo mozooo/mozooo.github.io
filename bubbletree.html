@@ -33,12 +33,12 @@ title: 使途別予算額
     '/js/libs/vis4.js',
     '/js/libs/base64.js',
     '/js/libs/Tween.js',
-    '/js/libs/kwsk/yaml.js',
     '/js/bubbletree.js',
     '/css/bubbletree.css',
     '/css/cra-map.css',
     '/js/aggregator.js',
-    '/js/kwsk_datamanager.js?20150430'
+    // '/js/setting.js'
+    '/js/datamanager.js?20150430'
   ],
   complete: function() {
 
@@ -98,7 +98,7 @@ title: 使途別予算額
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
     <select id="kwsk_fiscal-year">
-    {% for fiscalyear in site.data.kwsk.fiscalyears %}
+    {% for fiscalyear in site.data.fiscalyears %}
       <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
     {% endfor %}
     </select>
@@ -106,7 +106,7 @@ title: 使途別予算額
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
     <select id="kwsk_category-type">
-    {% for categorytype in site.data.kwsk.categorytypes %}
+    {% for categorytype in site.data.categorytypes %}
       <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
     {% endfor %}
     </select>
