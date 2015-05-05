@@ -3,7 +3,7 @@
   selected: selected
   drilldowns: ['Category']
   breakdown: 'Category'
-  config:
+  cofogs:
     - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '保険・医療・福祉の充実に' }
     - { id: '2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '子育ての支援に' }
     - { id: '3', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '道路・公園緑地・河川・下水道の整備と安全なまちづくりに' }
@@ -22,7 +22,7 @@
   selected:
   drilldowns: ['Category', 'Subcategory']
   breakdown: 'Subcategory'
-  config:
+  cofogs:
     - { id: '1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
     - { id: '1-1', image: { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' }, data: '議会費' }
     - { id: '2', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費' }
