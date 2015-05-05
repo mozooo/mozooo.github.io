@@ -115,11 +115,13 @@ yepnope({
   </div>
   あなたの市税は、1日当たり、どこで、いくら使われているか？
 </div><!-- /#dailybread -->
-<div id="data-categorytypes" style="display: none;">
-[{% for categorytype in site.data.categorytypes %}{
+<script id="data-categorytypes" type="application/json">
+[
+{% for categorytype in site.data.categorytypes %}{
     "id"          : {{ categorytype.id }}
     "drilldowns"  : {{ categorytype.drilldowns }}
     "breakdown"   : {{ categorytype.breakdown }}
     "styles"       : {% for cofog in categorytype.cofogs %} { "{{ cofog.id }}" : {{ cofog.image }} }{% endfor %}
-  }{% if forloop.last %}{% else %},{% endif %}{% endfor %}]
-</div>
+  }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+]
+</script>
