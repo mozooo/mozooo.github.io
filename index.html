@@ -4,7 +4,7 @@ title: 使途一日あたり
 ---
 
 <script>
-function updatePage(db, categoryType, fiscalYear, data-json) {
+function updatePage(db, categoryType, fiscalYear) {
   DataManager.setConfig(categoryType, fiscalYear, function (data) {
     db.children('#content-wrap').show();
     db.children('#preloader').remove();
@@ -51,7 +51,7 @@ yepnope({
         });
 
         // データマネージャーロード
-        DataManager.init($("#data-common"), $("#data-categorytypes"));
+        DataManager.init($("#data-categorytypes"));
 
         // ページロード
         $('#preloader .txt').html('loading data');

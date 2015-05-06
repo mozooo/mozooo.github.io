@@ -108,16 +108,16 @@ var DataManager = {
   configs: {},
   styles: {},
 
-  init: function(common, categorytypes) {
+  init: function(categorytypes) {
     this.taxes = common.taxes;
 
     for (type of categorytypes) {
       this.configs[type.id] = {
-        apiUrl: common.apiUrl,
+        apiUrl: ApiUrl,
         dataset: type.id,
         drilldowns: type.drilldowns,
         breakdown: type.breakdown,
-        rootNodeLabel: common.rootNodeLabel,
+        rootNodeLabel: RootNodeLabel,
       }
       this.styles[type.id] = type.config;
     }
