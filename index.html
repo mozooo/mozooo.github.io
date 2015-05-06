@@ -119,7 +119,7 @@ yepnope({
 [
 {% for categorytype in site.data.categorytypes %}{
   "id"          : {{ categorytype.id }},
-  "drilldowns"  : {{ categorytype.drilldowns }},
+  "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
   "breakdown"   : {{ categorytype.breakdown }},
   "styles"      : {{% for cofog in categorytype.cofogs %}
     "{{ cofog.id }}" : {{ cofog.image }}{% if forloop.last %}}{% else %},{% endif %}{% endfor %}
