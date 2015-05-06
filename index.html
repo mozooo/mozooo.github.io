@@ -51,7 +51,7 @@ yepnope({
         });
 
         // データマネージャーロード
-        DataManager.init($("#data-categorytypes"));
+        DataManager.init($("#data-categorytypes").innerText);
 
         // ページロード
         $('#preloader .txt').html('loading data');
@@ -125,7 +125,6 @@ yepnope({
   "styles"      : { {% for cofog in categorytype.cofogs %}
     "{{ cofog.id }}" : {{ cofog.image }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
   }
-{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-}
+{% if forloop.last %}{% else %},{% endif %}{% endfor %}}
 ]
 </script>
