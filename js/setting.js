@@ -103,8 +103,9 @@ var DataManager = {
   configs: {},
   styles: {},
 
-  init: function(categorytypes) {
-    console.log(categorytypes);
+  init: function(categorytypesText) {
+    console.log(categorytypesText);
+    categorytypes = eval(categorytypesText);
     for (var type in categorytypes) {
       this.configs[type.id] = {
         apiUrl: ApiUrl,
