@@ -104,8 +104,8 @@ var DataManager = {
   styles: {},
 
   init: function(categorytypes) {
+    console.log(categorytypes);
     for (var type in categorytypes) {
-      console.log(type.id);
       this.configs[type.id] = {
         apiUrl: ApiUrl,
         dataset: type.id,
