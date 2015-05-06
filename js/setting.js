@@ -104,7 +104,7 @@ var DataManager = {
   styles: {},
 
   init: function(categorytypes) {
-    for (type of categorytypes) {
+    for (var type in categorytypes) {
       this.configs[type.id] = {
         apiUrl: ApiUrl,
         dataset: type.id,
