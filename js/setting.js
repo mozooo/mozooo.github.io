@@ -100,17 +100,10 @@ OpenSpending.Styles.Cofog = {
 };
 
 var DataManager = {
-  taxes: {
-    baseKoujo: 0, // 住民税基礎控除
-    huyoKoujo: 0, // 一人分の扶養控除
-    taxRate: 0    // 住民税率
-  },
   configs: {},
   styles: {},
 
   init: function(categorytypes) {
-    this.taxes = common.taxes;
-
     for (type of categorytypes) {
       this.configs[type.id] = {
         apiUrl: ApiUrl,
