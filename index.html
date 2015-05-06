@@ -51,7 +51,9 @@ yepnope({
         });
 
         // データマネージャーロード
-        DataManager.init($("#data-categorytypes").text());
+        $.getJSON($("#data-categorytypes").text(), function(data) {
+          DataManager.init(data);
+        });
 
         // ページロード
         $('#preloader .txt').html('loading data');

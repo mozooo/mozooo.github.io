@@ -103,8 +103,8 @@ var DataManager = {
   configs: {},
   styles: {},
 
-  init: function(categorytypesText) {
-    categorytypes = eval(categorytypesText);
+  init: function(categorytypes) {
+    console.log(categorytypes);
     for (var type in categorytypes) {
       console.log(type.id);
       this.configs[type.id] = {
