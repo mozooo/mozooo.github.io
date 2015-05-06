@@ -52,6 +52,7 @@ yepnope({
 
         // データマネージャーロード
         $.getJSON($("#data-categorytypes").text(), function(data) {
+          alert("JSON Data: " + data);
           console.log(data);
           new DataManager.init(data);
         });
