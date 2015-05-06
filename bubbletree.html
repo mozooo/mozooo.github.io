@@ -37,8 +37,7 @@ title: 使途別予算額
     '/css/bubbletree.css',
     '/css/cra-map.css',
     '/js/aggregator.js',
-    // '/js/setting.js'
-    '/js/datamanager.js?20150430'
+    '/js/setting.js?20150506'
   ],
   complete: function() {
 
@@ -116,4 +115,15 @@ title: 使途別予算額
     <div id="bubbletree" class="bubbletree"></div>
   </div>
 </div>
+<script id="data-categorytypes" type="application/json">
+{% for categorytype in site.data.categorytypes %}{
+  "id"          : {{ categorytype.id }},
+  "data"        : {
+    "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+    "breakdown"   : {{ categorytype.breakdown }},
+    "styles"      : {{% for cofog in categorytype.cofogs %}
+      "{{ cofog.id }}" : {{ cofog.image }}{% if forloop.last %}}{% else %},{% endif %}{% endfor %}
+  }
+}{% if forloop.last %}}{% else %},{% endif %}{% endfor %}
+</script>
 
