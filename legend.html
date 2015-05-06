@@ -6,13 +6,13 @@ title: The Daily Bread
 {% for categorytype in site.data.categorytypes %}
 <h2>{{ categorytype.text }}</h2>
 <table>
-  {% for config in categorytype.config %}
+  {% for cofog in categorytype.cofogs %}
   <tr>
   <td>
-    <object type="image/svg+xml" data="{{ config.image.icon }}" height="30" width="30"></object>
+    <object type="image/svg+xml" data="{{ cofog.image.icon }}" height="30" width="30"></object>
   </td>
   <td>
-    <p>{{ config.data }}</p>
+    <p>{{ cofog.data }}</p>
   </td>
   </tr>
   {% endfor %}
