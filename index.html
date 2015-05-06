@@ -121,7 +121,7 @@ yepnope({
   "id"          : {{ categorytype.id }},
   "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
   "breakdown"   : {{ categorytype.breakdown }},
-  "styles"      : {{% for cofog in categorytype.cofogs %}
+  "stylescofog"      : {{% for cofog in categorytype.cofogs %}
     "{{ cofog.id }}" : {{ cofog.image }}{% if forloop.last %}}{% else %},{% endif %}{% endfor %}
 }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
 ]
