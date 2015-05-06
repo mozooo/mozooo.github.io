@@ -104,9 +104,9 @@ var DataManager = {
   styles: {},
 
   init: function(categorytypesText) {
-    console.log(categorytypesText);
     categorytypes = eval(categorytypesText);
     for (var type in categorytypes) {
+      console.log(type.id);
       this.configs[type.id] = {
         apiUrl: ApiUrl,
         dataset: type.id,
@@ -114,7 +114,7 @@ var DataManager = {
         breakdown: type.breakdown,
         rootNodeLabel: RootNodeLabel,
       }
-      this.styles[type.id] = type.config;
+      this.styles[type.id] = type.cofog;
     }
   },
 
