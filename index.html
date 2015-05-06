@@ -52,7 +52,8 @@ yepnope({
 
         // データマネージャーロード
         $.getJSON($("#data-categorytypes").text(), function(data) {
-          DataManager.init(data);
+          console.log(data);
+          new DataManager.init(data);
         });
 
         // ページロード
