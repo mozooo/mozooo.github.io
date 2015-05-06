@@ -117,9 +117,9 @@ var DataManager = {
   },
 
   setConfig: function(categoryType, fiscalYear, cb) {
-    this.configs[categoryTyps][cuts] = ['year:' + fiscalYear];
-    this.configs[categoryTyps][callback] = cb;
-    new OpenSpending.Aggregator(this.configs[categoryTyps]);
+    this.configs[categoryType][cuts] = ['year:' + fiscalYear];
+    this.configs[categoryType][callback] = cb;
+    new OpenSpending.Aggregator(this.configs[categoryType]);
   }
 };
 
