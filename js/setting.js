@@ -112,7 +112,9 @@ var DataManager = {
         dataset: type.id,
         drilldowns: type.drilldowns,
         breakdown: type.breakdown,
+        cuts: ['year:'],
         rootNodeLabel: RootNodeLabel,
+        callback: {}
       }
       this.styles[type.id] = type.cofog;
     }
