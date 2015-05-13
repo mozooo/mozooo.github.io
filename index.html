@@ -126,7 +126,6 @@ yepnope({
   "breakdown"   : {{ categorytype.breakdown }},
   "styles"      : { {% for cofog in categorytype.cofogs %}
     "{{ cofog.id }}" : { icon : "{{ cofog.image.icon }}", color : "{{ cofog.image.color }}", bcolor : "{{ cofog.image.bcolor }}" } {% if forloop.last %}{% else %},{% endif %}{% endfor %}
-  }
-{% if forloop.last %}{% else %},{% endif %}{% endfor %}}
+  }{% if forloop.last %}{% else %},{% endif %}{% endfor %}}
 ]
 </script>
