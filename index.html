@@ -53,6 +53,7 @@ yepnope({
         // データマネージャーロード
         var categories = [];
         categories = eval($("#data-categorytypes").text());
+        console.log(categories);
         new DataManager.init(categories);
 
         // ページロード
