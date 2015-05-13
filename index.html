@@ -54,7 +54,7 @@ yepnope({
         console.log("start");
         $.getJSON($("#data-categorytypes").text(), function(json) {
           new DataManager.init(json.categories);
-        })
+        });
 
         // ページロード
         $('#preloader .txt').html('loading data');
