@@ -52,10 +52,10 @@ yepnope({
 
         // データマネージャーロード
         console.log("start");
-        var categories = [];
-        categories = eval($("#data-categorytypes").text());
-        console.log(categories);
-        new DataManager.init(categories);
+        $.getJSON($("#data-categorytypes").text(), function(json) {
+          console.log(json);
+          new DataManager.init(json.categories);
+        })
 
         // ページロード
         $('#preloader .txt').html('loading data');
@@ -121,7 +121,7 @@ yepnope({
   あなたの市税は、1日当たり、どこで、いくら使われているか？
 </div><!-- /#dailybread -->
 <script id="data-categorytypes" type="application/json">
-[
+{"categories": [
 {% for categorytype in site.data.categorytypes %} {
   "id"          : {{ categorytype.id }},
   "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
@@ -129,5 +129,5 @@ yepnope({
   "styles"      : { {% for cofog in categorytype.cofogs %}
     "{{ cofog.id }}" : { icon : "{{ cofog.image.icon }}", color : "{{ cofog.image.color }}", bcolor : "{{ cofog.image.bcolor }}" } {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
   }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-]
+]}
 </script>
