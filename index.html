@@ -125,8 +125,10 @@ yepnope({
   "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
   "breakdown"   : {{ categorytype.breakdown }},
   "styles"      : { {% for cofog in categorytype.cofogs %}
-    "{{ cofog.id }}" : {% for image in cofog.image %} { "icon" : {{ image.icon }}, "color" : {{ image.color }}, "bcolor" : {{ image.bcolor }} }{% if forloop.last %}{% else %},{% endif %}{% endfor %}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-  }
+    "{{ cofog.id }}" : {% for img in cofog.image %}
+        { "icon" : {{ img.icon }}, "color" : {{ img.color }}, "bcolor" : {{ img.bcolor }} }
+      {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
+    {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
 {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
 ]
 </script>
