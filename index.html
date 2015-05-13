@@ -120,12 +120,13 @@ yepnope({
 </div><!-- /#dailybread -->
 <script id="data-categorytypes" type="application/json">
 [
-{% for categorytype in site.data.categorytypes %}
-{ "id"          : {{ categorytype.id }},
+{% for categorytype in site.data.categorytypes %} {
+  "id"          : {{ categorytype.id }},
   "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
   "breakdown"   : {{ categorytype.breakdown }},
   "styles"      : { {% for cofog in categorytype.cofogs %}
-    "{{ cofog.id }}" : { icon : "{{ cofog.image.icon }}", color : "{{ cofog.image.color }}", bcolor : "{{ cofog.image.bcolor }}" } {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
-  {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
+    "{{ cofog.id }}" : { icon : "{{ cofog.image.icon }}", color : "{{ cofog.image.color }}", bcolor : "{{ cofog.image.bcolor }}" } {% if forloop.last %}{% else %},{% endif %}{% endfor %}
+  {% if forloop.last %}{% else %},{% endif %}{% endfor %}
+}
 ]
 </script>
