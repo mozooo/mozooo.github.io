@@ -104,7 +104,6 @@ var DataManager = {
   styles: {},
 
   init: function(categorytypes) {
-    console.log(categorytypes);
     for (var categorytype in categorytypes) {
       var type = eval(categorytype);
       console.log(type.id);
