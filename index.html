@@ -23,17 +23,18 @@ console.log(types[i]);
       this.breakdown[types[i].id] = types[i].breakdown;
       this.styles[types[i].id] = types[i].styles;
     }
+
+    console.log("Setting:");
+    console.log(this.apiUrl);
+    console.log(this.dataset);
+    console.log(this.drilldowns);
+    console.log(this.breakdown);
+    console.log(this.styles);
+
   }
 };
 
 function updatePage(db, categoryType, fiscalYear) {
-
-console.log("Setting:");
-console.log(Setting.apiUrl);
-console.log(Setting.dataset[categoryType]);
-console.log(Setting.drilldowns[categoryType]);
-console.log(Setting.breakdown[categoryType]);
-console.log(Setting.styles[categoryType]);
 
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,
