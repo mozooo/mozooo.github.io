@@ -90,6 +90,7 @@ yepnope({
 
         // 設定ロード
         var jsonData = eval($("#data-categorytypes").text());
+        Setting.init(jsonData);
 
         // ページロード
         $('#preloader .txt').html('loading data');
