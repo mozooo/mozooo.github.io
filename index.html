@@ -14,15 +14,14 @@ var Setting = {
   styles: [],
 
   init: function(json) {
-console.log(json.categorytypes);
-    for (var categorytype in json.categorytypes) {
-console.log(categorytype);
-      var type = eval(categorytype);
+    var types = json.categorytypes;
+    for (var i = 0; i < types.length; i++) {
+console.log(types[i]);
 
-      this.dataset[type.id] = type.id;
-      this.drilldowns[type.id] = type.drilldowns;
-      this.breakdown[type.id] = type.breakdown;
-      this.styles[type.id] = type.cofog;
+      this.dataset[types[i].id] = types[i].id;
+      this.drilldowns[types[i].id] = types[i].drilldowns;
+      this.breakdown[types[i].id] = types[i].breakdown;
+      this.styles[types[i].id] = types[i].cofog;
     }
   }
 };
