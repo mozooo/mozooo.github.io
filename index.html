@@ -89,7 +89,7 @@ yepnope({
         });
 
         // 設定ロード
-        console.log(("#data-categorytypes").text());
+        console.log($("#data-categorytypes").text());
         $.getJSON($("#data-categorytypes").text(), null, function(json, status) {
           console.log(status);
           Setting.init(json.categories);
