@@ -1,6 +1,3 @@
-var ApiUrl = 'http://openspending.org/api';
-var RootNodeLabel = 'Total';
-
 var Taxes = Taxes || {};
 
 Taxes.baseKoujo = 330000; // 住民税基礎控除
@@ -99,35 +96,23 @@ OpenSpending.Styles.Cofog = {
   '16-65': { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }
 };
 
-var DataManager = {
-  configs: [],
+var Setting = {
+  apiUrl: 'http://openspending.org/api',
+  rootNodeLabel: 'Total',
+  dataset: [],
+  drilldowns: [],
+  breakdown: [],
   styles: [],
 
   init: function(categorytypes) {
     for (var categorytype in categorytypes) {
       var type = eval(categorytype);
-      console.log(type.id);
-      this.configs[type.id] = {
-        apiUrl: ApiUrl,
-        dataset: type.id,
-        drilldowns: type.drilldowns,
-        breakdown: type.breakdown,
-        cuts: ['year:'],
-        rootNodeLabel: RootNodeLabel,
-        callback: {}
-      }
+
+      this.dataset[type.id] = type.id;
+      this.drilldowns: type.drilldowns;
+      this.breakdown: type.breakdown;
       this.styles[type.id] = type.cofog;
     }
-  },
-
-  getConfigs: function() {
-    return(this.configs);
-  },
-
-  setConfig: function(categoryType, fiscalYear, cb) {
-    //this.configs[categoryType].cuts = ['year:' + fiscalYear];
-    //this.configs[categoryType].callback = cb;
-    new OpenSpending.Aggregator(this.configs[categoryType]);
   }
 };
 

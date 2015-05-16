@@ -5,20 +5,28 @@ title: 使途一日あたり
 
 <script>
 function updatePage(db, categoryType, fiscalYear) {
-  DataManager.setConfig(categoryType, fiscalYear, function (data) {
-console.log("setConfig");
-    db.children('#content-wrap').show();
-    db.children('#preloader').remove();
+  new OpenSpending.Aggregator({
+    apiUrl: Setting.apiUrl,
+    //localApiCache: 'aggregate.json',
+    dataset: Setting.dataset[categoryType],
+    drilldowns: Setting.drilldowns[categoryType],
+    cuts: ['year:' + fiscalYear],
+    rootNodeLabel: Setting.rootNodeLabel,
+    breakdown: Setting.breakdown[categoryType],
+    callback: function(data) {
+      $('#content-wrap').show();
+      $('#preloader').remove();
 
-    db.setDataFromAggregator(data, ['unknown']);
-    db.setIconLookup(function(name) {
-      var style = this.configs[categoryType].Styles.Cofog[name];
-      if (style != undefined) {
-        return style['icon'];
-      }
-      return 'icons/unknown.svg';
-    });
-    db.draw();
+      db.setDataFromAggregator(data, ['unknown']);
+      db.setIconLookup(function(name) {
+        var style = Setting.styles[name];
+        if (style != undefined) {
+         return style['icon'];
+        }
+        return 'icons/unknown.svg';
+      });
+      db.draw();
+    }
   });
   OpenSpending.renderDependentTypes(db);
 }
@@ -51,15 +59,14 @@ yepnope({
           updatePage(db, this.value, $("#fiscal-year").value);
         });
 
-        // データマネージャーロード
+        // 設定ロード
         $.getJSON($("#data-categorytypes").text(), function(json) {
-          new DataManager.init(json.categories);
+          new Setting.init(json.categories);
         });
 
         // ページロード
         $('#preloader .txt').html('loading data');
 
-console.log(DataManager.getConfigs());
         var db = new OpenSpending.DailyBread($('#dailybread'));
         updatePage(db, $("#category-type").value, $("#fiscal-year").value);
       });
