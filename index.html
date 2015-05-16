@@ -14,7 +14,9 @@ var Setting = {
   styles: [],
 
   init: function(json) {
+console.log(json);
     for (var categorytype in json.categorytypes) {
+console.log(categorytype);
       var type = eval(categorytype);
 
       this.dataset[type.id] = type.id;
@@ -89,9 +91,8 @@ yepnope({
         });
 
         // 設定ロード
-        console.log($("#json-categorytypes").text());
         var categoryTypes = JSON.parse($("#json-categorytypes").text());
-        console.log(categoryTypes);
+console.log(categoryTypes);
         Setting.init(categoryTypes);
 
         // ページロード
