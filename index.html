@@ -59,8 +59,8 @@ yepnope({
         // ページロード
         $('#preloader .txt').html('loading data');
 
+console.log(DataManager.getConfigs());
         var db = new OpenSpending.DailyBread($('#dailybread'));
-console.log(db);
         updatePage(db, $("#category-type").value, $("#fiscal-year").value);
       });
     })(jQuery)
