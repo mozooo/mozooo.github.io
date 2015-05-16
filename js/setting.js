@@ -96,24 +96,5 @@ OpenSpending.Styles.Cofog = {
   '16-65': { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }
 };
 
-var Setting = {
-  apiUrl: 'http://openspending.org/api',
-  rootNodeLabel: 'Total',
-  dataset: [],
-  drilldowns: [],
-  breakdown: [],
-  styles: [],
-
-  init: function(categorytypes) {
-    for (var categorytype in categorytypes) {
-      var type = eval(categorytype);
-
-      this.dataset[type.id] = type.id;
-      this.drilldowns[type.id] = type.drilldowns;
-      this.breakdown[type.id] = type.breakdown;
-      this.styles[type.id] = type.cofog;
-    }
-  }
-};
 
 
