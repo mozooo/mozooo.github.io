@@ -5,6 +5,13 @@ title: 使途一日あたり
 
 <script>
 function updatePage(db, categoryType, fiscalYear) {
+
+console.log("Setting:");
+console.log(Setting.dataset[categoryType]);
+console.log(Setting.drilldowns[categoryType]);
+console.log(Setting.breakdown[categoryType]);
+console.log(Setting.styles[categoryType]);
+
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,
     //localApiCache: 'aggregate.json',
@@ -19,7 +26,7 @@ function updatePage(db, categoryType, fiscalYear) {
 
       db.setDataFromAggregator(data, ['unknown']);
       db.setIconLookup(function(name) {
-        var style = Setting.styles[name];
+        var style = Setting.styles[categoryType][name];
         if (style != undefined) {
          return style['icon'];
         }
