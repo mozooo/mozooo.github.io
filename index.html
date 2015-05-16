@@ -90,6 +90,7 @@ yepnope({
 
         // 設定ロード
         $.getJSON($("#data-categorytypes").text(), function(json) {
+          console.log(json);
           Setting.init(json.categories);
           console.log("Load Setting:");
           console.log(Setting.apiUrl);
