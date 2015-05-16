@@ -89,9 +89,7 @@ yepnope({
         });
 
         // 設定ロード
-        $.getJSON($("#data-categorytypes").text(), function(json) {
-          Setting.init(json.categories);
-        });
+        var jsonData = eval("(" + $("#data-categorytypes").text() + ")");
 
         // ページロード
         $('#preloader .txt').html('loading data');
