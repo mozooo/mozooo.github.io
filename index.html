@@ -89,17 +89,10 @@ yepnope({
         });
 
         // 設定ロード
-        console.log($("#data-categorytypes").text());
-        $.getJSON($("#data-categorytypes").text(), null, function(json, status) {
-          console.log(status);
-          Setting.init(json.categories);
-          console.log("Load Setting:");
-          console.log(Setting.apiUrl);
-          console.log(Setting.dataset[categoryType]);
-          console.log(Setting.drilldowns[categoryType]);
-          console.log(Setting.breakdown[categoryType]);
-          console.log(Setting.styles[categoryType]);
-        });
+        console.log($("#json-categorytypes").text());
+        var categories = JSON.parse($("#json-categorytypes").text());
+        console.log(categories);
+        Setting.init(categories);
 
         // ページロード
         $('#preloader .txt').html('loading data');
@@ -164,7 +157,7 @@ yepnope({
   </div>
   あなたの市税は、1日当たり、どこで、いくら使われているか？
 </div><!-- /#dailybread -->
-<script id="data-categorytypes" type="application/json">
+<script id="json-categorytypes" type="application/json">
 {"categories": [
 {% for categorytype in site.data.categorytypes %} {
   "id"          : {{ categorytype.id }},
