@@ -89,8 +89,15 @@ yepnope({
         });
 
         // 設定ロード
-        var jsonData = eval($("#data-categorytypes").text());
-        Setting.init(jsonData);
+        $.getJSON($("#data-categorytypes").text(), function(json) {
+          Setting.init(json.categories);
+          console.log("Load Setting:");
+          console.log(Setting.apiUrl);
+          console.log(Setting.dataset[categoryType]);
+          console.log(Setting.drilldowns[categoryType]);
+          console.log(Setting.breakdown[categoryType]);
+          console.log(Setting.styles[categoryType]);
+        });
 
         // ページロード
         $('#preloader .txt').html('loading data');
