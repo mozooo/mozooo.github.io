@@ -52,7 +52,6 @@ yepnope({
         });
 
         // データマネージャーロード
-console.log("init");
         $.getJSON($("#data-categorytypes").text(), function(json) {
           new DataManager.init(json.categories);
         });
@@ -60,9 +59,8 @@ console.log("init");
         // ページロード
         $('#preloader .txt').html('loading data');
 
-console.log("dailybread");
         var db = new OpenSpending.DailyBread($('#dailybread'));
-console.log("updatePage");
+console.log("db:" + db);
         updatePage(db, $("#category-type").value, $("#fiscal-year").value);
       });
     })(jQuery)

@@ -118,6 +118,7 @@ var DataManager = {
       }
       this.styles[type.id] = type.cofog;
     }
+console.log("configs:" + this.configs);
   },
 
   setConfig: function(categoryType, fiscalYear, cb) {
