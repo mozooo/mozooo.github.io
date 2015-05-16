@@ -109,8 +109,8 @@ var Setting = {
       var type = eval(categorytype);
 
       this.dataset[type.id] = type.id;
-      this.drilldowns: type.drilldowns;
-      this.breakdown: type.breakdown;
+      this.drilldowns[type.id] = type.drilldowns;
+      this.breakdown[type.id] = type.breakdown;
       this.styles[type.id] = type.cofog;
     }
   }
