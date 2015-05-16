@@ -14,7 +14,7 @@ var Setting = {
   styles: [],
 
   init: function(json) {
-console.log(json);
+console.log(json.categorytypes);
     for (var categorytype in json.categorytypes) {
 console.log(categorytype);
       var type = eval(categorytype);
