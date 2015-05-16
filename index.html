@@ -51,7 +51,7 @@ yepnope({
         });
 
         // データマネージャーロード
-        console.log("start");
+console.log("start");
         $.getJSON($("#data-categorytypes").text(), function(json) {
           new DataManager.init(json.categories);
         });

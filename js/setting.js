@@ -100,8 +100,8 @@ OpenSpending.Styles.Cofog = {
 };
 
 var DataManager = {
-  configs: {},
-  styles: {},
+  configs: [],
+  styles: [],
 
   init: function(categorytypes) {
     for (var categorytype in categorytypes) {
