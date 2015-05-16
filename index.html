@@ -13,8 +13,8 @@ var Setting = {
   breakdown: [],
   styles: [],
 
-  init: function(categorytypes) {
-    for (var categorytype in categorytypes) {
+  init: function(json) {
+    for (var categorytype in json.categorytypes) {
       var type = eval(categorytype);
 
       this.dataset[type.id] = type.id;
@@ -90,9 +90,9 @@ yepnope({
 
         // 設定ロード
         console.log($("#json-categorytypes").text());
-        var categories = JSON.parse($("#json-categorytypes").text());
-        console.log(categories);
-        Setting.init(categories);
+        var categoryTypes = JSON.parse($("#json-categorytypes").text());
+        console.log(categoryTypes);
+        Setting.init(categoryTypes);
 
         // ページロード
         $('#preloader .txt').html('loading data');
@@ -158,7 +158,7 @@ yepnope({
   あなたの市税は、1日当たり、どこで、いくら使われているか？
 </div><!-- /#dailybread -->
 <script id="json-categorytypes" type="application/json">
-{"categories": [
+{"categorytypes": [
 {% for categorytype in site.data.categorytypes %} {
   "id"          : "{{ categorytype.id }}",
   "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}"{{ drilldown }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
