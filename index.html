@@ -5,43 +5,16 @@ title: 使途一日あたり
 
 <script>
 
-var Setting = {
-  apiUrl: 'http://openspending.org/api',
-  rootNodeLabel: 'Total',
-  dataset: {},
-  drilldowns: {},
-  breakdown: {},
-  styles: {},
-
-  init: function(json) {
-    var types = json.categorytypes;
-    for (var i = 0; i < types.length; i++) {
-      this.dataset[types[i].id] = types[i].id;
-      this.drilldowns[types[i].id] = types[i].drilldowns;
-      this.breakdown[types[i].id] = types[i].breakdown;
-      this.styles[types[i].id] = types[i].styles;
-    }
-
-    // for debug
-    // console.log("Setting.init Done.");
-    // console.log(this.apiUrl);
-    // console.log(this.dataset);
-    // console.log(this.drilldowns);
-    // console.log(this.breakdown);
-    // console.log(this.styles);
-  }
-};
-
 function updatePage(db, categoryType, fiscalYear) {
 
-    // for debug
-    console.log("Call updatePage.");
-    console.log(Setting.apiUrl);
-    console.log(Setting.dataset[categoryType]);
-    console.log(Setting.drilldowns[categoryType]);
-    console.log(fiscalYear);
-    console.log(Setting.breakdown[categoryType]);
-    console.log(Setting.styles[categoryType]);
+  // - for debug -
+  //console.log("Call updatePage.");
+  //console.log(Setting.apiUrl);
+  //console.log(Setting.dataset[categoryType]);
+  //console.log(Setting.drilldowns[categoryType]);
+  //console.log(fiscalYear);
+  //console.log(Setting.breakdown[categoryType]);
+  //console.log(Setting.styles[categoryType]);
 
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,

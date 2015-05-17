@@ -4,6 +4,34 @@ Taxes.baseKoujo = 330000; // 住民税基礎控除
 Taxes.huyoKoujo = 330000; // 一人分の扶養控除
 Taxes.taxRate = 0.06; // 住民税率
 
+var Setting = {
+  apiUrl: 'http://openspending.org/api',
+  rootNodeLabel: 'Total',
+  dataset: {},
+  drilldowns: {},
+  breakdown: {},
+  styles: {},
+
+  init: function(json) {
+    var types = json.categorytypes;
+    for (var i = 0; i < types.length; i++) {
+      this.dataset[types[i].id] = types[i].id;
+      this.drilldowns[types[i].id] = types[i].drilldowns;
+      this.breakdown[types[i].id] = types[i].breakdown;
+      this.styles[types[i].id] = types[i].styles;
+    }
+
+    // - for debug -
+    // console.log("Setting.init Done.");
+    // console.log(this.apiUrl);
+    // console.log(this.dataset);
+    // console.log(this.drilldowns);
+    // console.log(this.breakdown);
+    // console.log(this.styles);
+  }
+};
+
+/*
 var OpenSpending = OpenSpending || {};
 
 OpenSpending.identifier = 'kanagawaken_kawasakishi_budget';
@@ -12,7 +40,6 @@ OpenSpending.year = '2015';
 OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
-  /* kawasaki cofog */
   '1': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' },
   '1-1': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#935B3B' },
   '2': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },
@@ -96,5 +123,5 @@ OpenSpending.Styles.Cofog = {
   '16-65': { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#790586' }
 };
 
-
+*/
 
