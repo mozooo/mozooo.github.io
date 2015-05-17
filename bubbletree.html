@@ -47,7 +47,7 @@ yepnope({
     (function ($) {
 
       $(function() {
-
+console.log("tooltip");
         var $tooltip = $('<div class="tooltip">Tooltip</div>');
         $('.bubbletree').append($tooltip);
         $tooltip.hide();
@@ -73,6 +73,7 @@ yepnope({
         }
       });
 
+console.log("event");
       // イベント：会計年度
       $("#fiscal-year").change(function(){
         updatePage($("#category-type").val(), this.value);
