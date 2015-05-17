@@ -41,7 +41,7 @@ blockquote p {
 }
 
 a {
-  color: #830242;
+  color: #2B3095;
 }
 
 .chromeframe {
@@ -77,11 +77,11 @@ a {
   text-align: center;
 }
 
-/* 
- * Nav and Footer styles based on OKFN brand design. 
+/*
+ * Nav and Footer styles based on OKFN brand design.
  */
 
-nav ul li, 
+nav ul li,
 footer,
 footer p {
   font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -121,8 +121,8 @@ footer a, footer a:hover {
 }
 
 
-/* 
- * Visualization-specific styles. 
+/*
+ * Visualization-specific styles.
  */
 
 #dailybread {
