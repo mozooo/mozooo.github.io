@@ -22,12 +22,12 @@ var Setting = {
     }
 
     // - for debug -
-    // console.log("Setting.init Done.");
-    // console.log(this.apiUrl);
-    // console.log(this.dataset);
-    // console.log(this.drilldowns);
-    // console.log(this.breakdown);
-    // console.log(this.styles);
+    console.log("Setting.init Done.");
+    console.log(this.apiUrl);
+    console.log(this.dataset);
+    console.log(this.drilldowns);
+    console.log(this.breakdown);
+    console.log(this.styles);
   }
 };
 
