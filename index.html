@@ -20,7 +20,6 @@ function updatePage(db, categoryType, fiscalYear) {
 
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,
-    //localApiCache: 'aggregate.json',
     dataset: Setting.dataset[categoryType],
     drilldowns: Setting.drilldowns[categoryType],
     cuts: ['year:' + fiscalYear],

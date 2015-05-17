@@ -19,7 +19,6 @@ title: 使途別予算額
 
     new OpenSpending.Aggregator({
       apiUrl: Setting.apiUrl,
-      //localApiCache: 'aggregate.json',
       dataset: Setting.dataset[categoryType],
       drilldowns: Setting.drilldowns[categoryType],
       cuts: ['year:' + fiscalYear],
@@ -66,6 +65,10 @@ title: 使途別予算額
 
     $(function() {
 
+      var $tooltip = $('<div class="tooltip">Tooltip</div>');
+      $('.bubbletree').append($tooltip);
+      $tooltip.hide();
+
       // イベント：会計年度
       $("#fiscal-year").change(function(){
         updatePage($("#category-type").val(), this.value);
@@ -78,10 +81,6 @@ title: 使途別予算額
       // 設定ロード
       var categoryTypes = JSON.parse($("#json-categorytypes").text());
       Setting.init(categoryTypes);
-
-      var $tooltip = $('<div class="tooltip">Tooltip</div>');
-      $('.bubbletree').append($tooltip);
-      $tooltip.hide();
 
       // call openspending api for data
       updatePage($("#category-type option:selected").val(), $("#fiscal-year option:selected").val());
