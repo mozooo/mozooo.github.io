@@ -68,18 +68,20 @@ title: 使途別予算額
 
       // イベント：会計年度
       $("#fiscal-year").change(function(){
-        updatePage(db, $("#category-type").value, this.val());
+        updatePage(db, $("#category-type").val(), this.value);
       });
       // イベント：分類タイプ
       $("#category-type").change(function(){
         updatePage(db, this.value, $("#fiscal-year").val());
       });
 
+      // 設定ロード
+      var categoryTypes = JSON.parse($("#json-categorytypes").text());
+      Setting.init(categoryTypes);
+
       var $tooltip = $('<div class="tooltip">Tooltip</div>');
       $('.bubbletree').append($tooltip);
       $tooltip.hide();
-
-      var dataLoaded =
 
       // call openspending api for data
       updatePage(db, $("#category-type option:selected").val(), $("#fiscal-year option:selected").val());
@@ -110,16 +112,14 @@ title: 使途別予算額
     <div id="bubbletree" class="bubbletree"></div>
   </div>
 </div>
-<script id="data-categorytypes" type="application/json">
-{% for categorytype in site.data.categorytypes %}{
-  "id"          : {{ categorytype.id }},
-  "data"        : {
-    "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}{{ drilldown }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
-    "breakdown"   : {{ categorytype.breakdown }},
-    "styles"      : { {% for cofog in categorytype.cofogs %}
-      "{{ cofog.id }}" : {{ cofog.image }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-    }
-  }
-{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-}
+<script id="json-categorytypes" type="application/json">
+{"categorytypes": [
+{% for categorytype in site.data.categorytypes %} {
+  "id"          : "{{ categorytype.id }}",
+  "drilldowns"  : [{% for drilldown in categorytype.drilldowns %}"{{ drilldown }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+  "breakdown"   : "{{ categorytype.breakdown }}",
+  "styles"      : { {% for cofog in categorytype.cofogs %}
+    "{{ cofog.id }}" : { "icon" : "{{ cofog.image.icon }}", "color" : "{{ cofog.image.color }}", "bcolor" : "{{ cofog.image.bcolor }}" } {% if forloop.last %}{% else %},{% endif %}{% endfor %}}
+  }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+]}
 </script>
