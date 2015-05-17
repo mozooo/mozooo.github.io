@@ -6,7 +6,7 @@ title: 使途別予算額
 <div class="row">
   <script type="text/javascript">
 
-  function updatePage(db, categoryType, fiscalYear) {
+  function updatePage(categoryType, fiscalYear) {
 
     // - for debug -
     //console.log("Call updatePage.");
@@ -68,11 +68,11 @@ title: 使途別予算額
 
       // イベント：会計年度
       $("#fiscal-year").change(function(){
-        updatePage(db, $("#category-type").val(), this.value);
+        updatePage($("#category-type").val(), this.value);
       });
       // イベント：分類タイプ
       $("#category-type").change(function(){
-        updatePage(db, this.value, $("#fiscal-year").val());
+        updatePage(this.value, $("#fiscal-year").val());
       });
 
       // 設定ロード
@@ -84,7 +84,7 @@ title: 使途別予算額
       $tooltip.hide();
 
       // call openspending api for data
-      updatePage(db, $("#category-type option:selected").val(), $("#fiscal-year option:selected").val());
+      updatePage($("#category-type option:selected").val(), $("#fiscal-year option:selected").val());
     });
   }
   });
