@@ -92,25 +92,23 @@ yepnope({
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
   -->
   <div>
-    <div style="display:inline-block;text-align:left;">
-      <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
-      <select id="fiscal-year">
-      {% for fiscalyear in site.data.fiscalyears %}
-        <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
-      {% endfor %}
-      </select>
-    </div>
-    <div style="width:300px;display:inline-block;text-align:right;font-size:14px;">
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい年度は？</h2>
+    <select id="fiscal-year">
+    {% for fiscalyear in site.data.fiscalyears %}
+      <option value="{{ fiscalyear.ad }}" {{ fiscalyear.selected }}>{{ fiscalyear.jc }}</option>
+    {% endfor %}
+    </select>
+    <div style="width:450px;display:inline-block;font-size:14px;text-align:right;vertical-align:top;">
       <a href="legend.html" onClick="window.open('legend.html','アイコンの説明','width=640,height=480') ; return false ;">アイコンの説明</a>
     </div>
-    <div>
-      <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
-      <select id="category-type">
-      {% for categorytype in site.data.categorytypes %}
-        <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
-      {% endfor %}
-      </select>
-    </div>
+  </div>
+  <div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">見たい分類は？</h2>
+    <select id="category-type">
+    {% for categorytype in site.data.categorytypes %}
+      <option value="{{ categorytype.id }}" {{ categorytype.selected }}>{{ categorytype.text }}</option>
+    {% endfor %}
+    </select>
   </div>
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">あなたの世帯タイプは？</h2>
