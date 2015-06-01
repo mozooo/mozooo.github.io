@@ -1,4 +1,4 @@
-Category,category_id,Subcategory,subcategory_id,amount,year
+"Category","category_id","Subcategory","subcategory_id","amount","year"
 "議会費","1","議会費","1","1748353000","2015"
 "総務費","2","職員管理費","2","31394394000","2015"
 "総務費","2","総務管理費","3","8247922000","2015"
