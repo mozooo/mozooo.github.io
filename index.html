@@ -16,8 +16,6 @@ function updatePage(db, categoryType, fiscalYear) {
   console.log(Setting.breakdown[categoryType]);
   console.log(Setting.styles[categoryType]);
   */
-  $('#dailybread').empty();
-  db.init();
 
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,
@@ -62,10 +60,12 @@ yepnope({
 
       // イベント：会計年度
       $("#fiscal-year").change(function(){
+        $('#dailybread').empty();
         updatePage(db, $("#category-type").val(), this.value);
       });
       // イベント：分類タイプ
       $("#category-type").change(function(){
+        $('#dailybread').empty();
         updatePage(db, this.value, $("#fiscal-year").val());
       });
 
