@@ -30,6 +30,7 @@ function updatePage(db, categoryType, fiscalYear) {
 
       db.setDataFromAggregator(data, ['unknown']);
       db.setIconLookup(function(name) {
+console.log(name);
         var style = Setting.styles[categoryType][name];
         if (style != undefined) {
          return style['icon'];
