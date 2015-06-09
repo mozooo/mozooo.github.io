@@ -8,14 +8,14 @@ title: 使途一日あたり
 function updatePage(db, categoryType, fiscalYear) {
 
   // - for debug -
-  /* console.log("Call updatePage.");
+  console.log("Call updatePage.");
   console.log(Setting.apiUrl);
   console.log(Setting.dataset[categoryType]);
   console.log(Setting.drilldowns[categoryType]);
   console.log(fiscalYear);
   console.log(Setting.breakdown[categoryType]);
   console.log(Setting.styles[categoryType]);
-  */
+
 
   new OpenSpending.Aggregator({
     apiUrl: Setting.apiUrl,
@@ -31,7 +31,6 @@ function updatePage(db, categoryType, fiscalYear) {
       db.setDataFromAggregator(data, ['unknown']);
       db.setIconLookup(function(name) {
         var style = Setting.styles[categoryType][name];
-console.log(name + ':'+ style);
         if (style != undefined) {
          return style['icon'];
         }
