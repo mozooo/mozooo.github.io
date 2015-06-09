@@ -21,13 +21,14 @@ var Setting = {
       this.styles[types[i].id] = types[i].styles;
     }
 
-    // - for debug -
+    /* - for debug -
     console.log("Setting.init Done.");
     console.log(this.apiUrl);
     console.log(this.dataset);
     console.log(this.drilldowns);
     console.log(this.breakdown);
     console.log(this.styles);
+    */
   }
 };
 
