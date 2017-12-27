@@ -35,6 +35,7 @@
     - { id: '2-7', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 統計調査費' }
     - { id: '2-8', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 人事委員会費' }
     - { id: '2-9', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 監査費' }
+    - { id: '2-10', image: { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' }, data: '総務費 - 臨海部国際戦略費' }
     - { id: '3', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '市民費' }
     - { id: '3-1', image: { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' }, data: '市民費 - 市民生活費' }
     - { id: '4', image: { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#D33673' }, data: 'こども費' }
