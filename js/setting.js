@@ -5,7 +5,7 @@ Taxes.huyoKoujo = 330000; // 一人分の扶養控除
 Taxes.taxRate = 0.06; // 住民税率
 
 var Setting = {
-  apiUrl: 'http://openspending.org/api/3/info/',
+  apiUrl: 'http://openspending.org/api',
   rootNodeLabel: 'Total',
   dataset: {},
   drilldowns: {},
