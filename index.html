@@ -19,7 +19,7 @@ function updatePage(db, categoryType, fiscalYear) {
   */
 
   new OpenSpending.Aggregator({
-    apiUrl: Setting.apiUrl,
+    apiUrl: Setting.apiUrl + Setting.dataset[categoryType] + "/package",
     dataset: Setting.dataset[categoryType],
     drilldowns: Setting.drilldowns[categoryType],
     cuts: ['year:' + fiscalYear],
